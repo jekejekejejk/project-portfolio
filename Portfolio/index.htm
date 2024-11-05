@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesekiel Amores - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#ebe8db]">
+    <!-- Responsive Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#cec495] rounded-lg mb-10 md:mb-80 px-4 md:px-6">
+        <div class="flex items-center justify-between py-4">
+            <!-- Logo Section -->
+            <h1 class="font-bold text-3xl md:text-5xl font-mono cursor-pointer hover:text-yellow-50 hover:animate-pulse flex items-center gap-2">
+                <img src="Photos/reading-book.png" alt="Logo" class="w-8 md:w-12">
+                <a href="#home">JESEKIEL</a>
+            </h1>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden p-2" id="burger">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/>
+                </svg>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex items-center gap-8" id="menu">
+                <li class="nav-item">
+                    <a href="#home" class="flex items-center gap-1 hover:text-yellow-50 hover:animate-bounce">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="flex items-center gap-1 hover:text-yellow-50 hover:animate-bounce">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
+                        </svg>
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="flex items-center gap-1 hover:text-yellow-50 hover:animate-bounce">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+                        </svg>
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume.pdf" download class="flex items-center gap-1 hover:text-yellow-50 hover:animate-bounce">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z"/>
+                        </svg>
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="md:hidden flex justify-center ">
+            <ul class="hidden pb-4 space-y-4" id="mobile-menu">
+                <li><a href="#home" class="block hover:text-yellow-50">Home</a></li>
+                <li><a href="#about" class="block hover:text-yellow-50">About Me</a></li>
+                <li><a href="#contact" class="block hover:text-yellow-50">Contact</a></li>
+                <li><a href="resume.pdf" download class="block hover:text-yellow-50">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="px-4 md:px-20 mb-20 md:mb-96 scroll-mt-[400px]" id="home">
+        <div class="max-w-screen-lg ">
+            <h1 class="text-4xl md:text-5xl font-bold">Hello, I am Jesekiel Amores!</h1>
+            <h3 class="text-lg text-gray-500 pb-3 font-semibold"><i>from BSIT 2-2A</i></h3>
+            <h4 class="text-xl font-semibold">Welcome to my Website.</h4>
+            <p class="text-justify text-lg">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae ex iusto, enim optio soluta 
+                accusantium ipsa harum neque expedita perspiciatis ut facere quod maxime veritatis iure autem! 
+                Odio animi, iure dignissimos nihil dolor facere quis officia?
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="px-4 md:px-20 mb-20 md:mb-96 scroll-mt-[300px]" id="about">
+        <div class="max-w-screen-lg">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">About Me</h1>
+            <div class="space-y-4">
+                <p class="text-lg text-justify">
+                    As a second-year BSIT student at URS Binangonan, I have developed a strong foundation in web 
+                    development technologies, including HTML, CSS, C#, and JavaScript. My enthusiasm for technology
+                    drives me to create dynamic web applications that not only enhance user experiences but also 
+                    showcase my creativity and technical skills.
+                </p>
+                <p class="text-lg text-justify">
+                    I believe that understanding someone goes beyond just their name; it's about discovering their 
+                    passions and experiences. By clicking the pictures below, you'll dive into the aspects that 
+                    define me.
+                </p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <a href="educ.html" target="_blank" class="hover:opacity-75 transition-opacity">
+                    <img src="Photos/edu.png" alt="Education" class="w-full rounded-lg">
+                </a>
+                <a href="hobi.html" class="hover:opacity-75 transition-opacity">
+                    <img src="Photos/hobi.png" alt="Hobbies" class="w-full rounded-lg">
+                </a>
+                <a href="favf.html" class="hover:opacity-75 transition-opacity">
+                    <img src="Photos/foods.png" alt="Favorite Foods" class="w-full rounded-lg">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white px-4 md:px-20 py-10 mb-20 md:mb-96 scroll-mt-20">
+        <div class="max-w-screen-lg">
+            <h1 class="text-3xl md:text-4xl font-bold mb-6">Contact me:</h1>
+            <div class="flex gap-4">
+                <a href="https://www.facebook.com/jesekiel.amores" target="_blank" class="hover:opacity-75 transition-opacity">
+                    <img src="Photos/communication.png" alt="Facebook" class="w-10 md:w-12">
+                </a>
+                <a href="https://www.instagram.com/jekejekjek/profilecard/?igsh=aWNpajlncmJtaG44" target="_blank" class="hover:opacity-75 transition-opacity">
+                    <img src="Photos/social.png" alt="Instagram" class="w-10 md:w-12">
+                </a>
+                <a href="https://x.com/jekejekejekjek?t=On_ye1D96OnmbFkCx8RUgg&s=09" target="_blank" class="hover:opacity-75 transition-opacity">
+                    <img src="Photos/logos.png" alt="Twitter" class="w-10 md:w-12">
+                </a>
+                <a href="mailto:amoresjesekiel@gmail.com" class="hover:opacity-75 transition-opacity">
+                    <img src="Photos/gmail.png" alt="Email" class="w-10 md:w-12">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        burger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
